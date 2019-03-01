@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="237.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="inputTextField" layoutX="31.0" layoutY="42.0" prefHeight="25.0" prefWidth="177.0" promptText="Введите число" />
+      <Label fx:id="resultLabel" layoutX="30.0" layoutY="96.0" prefHeight="17.0" prefWidth="177.0" text="Результат" />
+      <Button layoutX="68.0" layoutY="149.0" mnemonicParsing="false" onAction="#convertToOctal" text="8" />
+      <Button layoutX="143.0" layoutY="149.0" mnemonicParsing="false" onAction="#convertToHex" text="16" />
+   </children>
+</Pane>
