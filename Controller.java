@@ -14,28 +14,16 @@ public class Controller {
     private Label resultLabel;
 
     public void convertToHex(ActionEvent event) {
-        try {
-            //Попробуй тут
             String inputString = inputTextField.getText();
             Integer inputNumber = Integer.parseInt(inputString);
             String result = Integer.toHexString(inputNumber);
             resultLabel.setText(result);
-        } catch (Exception e) {
-            //Если что то не получилось выведи ошибку
-            resultLabel.setText("Неправльный ввод");
-        }
     }
 
     public void convertToOctal(ActionEvent event) {
-        try {
-            //Попробуй тут
             String inputString = inputTextField.getText();
             Integer inputNumber = Integer.parseInt(inputString);
             String result = Integer.toOctalString(inputNumber);
             resultLabel.setText(result);
-        } catch (Exception e) {
-            //Если что то не получилось выведи ошибку
-            resultLabel.setText("Неправльный ввод");
-        }
     }
 }
